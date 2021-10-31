@@ -1,6 +1,6 @@
 # LAMP for Docker
 Complete LAMP setup with Docker Compose for development environment. Start developing in less than 5 minutes.
-Development stack is based on PHP 7.3 + Apache 2.4 and MySQL 5.7 containers. 
+Development stack is based on PHP 7.4 + Apache 2.4 and MySQL 5.7 containers. 
 
 ##### Table of Contents  
 - [Prerequisites](https://github.com/danieltoader/lamp-docker#prerequisites)  
@@ -20,7 +20,7 @@ You'll need to have the following prerequisites **installed** on your workstatio
 ## What is included?
  * **Apache 2.4**
  * **MySQL 5.7**
- * **PHP 7.3**
+ * **PHP 7.4**
  * **PhpMyAdmin**
 
 ## Quick Start
@@ -44,7 +44,7 @@ $ cp ./.env.example ./.env
 $ docker-compose up -d
 ```
 
-Once the process is finished you can place your application in the ```www``` folder and access it using the the exposed ports.
+Once the process is finished you can place your application in the ```www``` folder and access it using the exposed ports.
 
 For quick access, check the links below:
 - phpmyadmin: http://localhost:8800
@@ -98,7 +98,7 @@ catch(PDOException $e)
 ```
 
 ##### Notice
-You must understand that this setup is meant to be disposable, it is not supposed to be persistent. Any persistent data **should remain on your host computer**, do not apply changes to the VM nor store data or documents that you don't want to loose. 
+You must understand that this setup is meant to be disposable, it is not supposed to be persistent. Any persistent data **should remain on your host computer**, do not apply changes to the VM nor store data or documents that you don't want to lose. 
 
 As a consequence, you may mess up with this setup, do heavy testing, install new apps to evaluate them and even crash it. If you need to rollback, just destroy it and recreate it as pure as the driven snow but with all your data (sources, databases and configuration intact). It is as simple as a `docker-compose rm -fsv && docker-compose up -d --force-recreate`.
 
