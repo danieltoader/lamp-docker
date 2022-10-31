@@ -1,6 +1,6 @@
 # LAMP for Docker
 Complete LAMP setup with Docker Compose for development environment. Start developing in less than 5 minutes.
-Development stack is based on PHP 7.4 + Apache 2.4 and MySQL 5.7 containers. 
+Development stack is based on PHP 8.0 + Apache 2.4 and MySQL 5.7 containers. 
 
 ##### Table of Contents  
 - [Prerequisites](https://github.com/danieltoader/lamp-docker#prerequisites)  
@@ -20,7 +20,7 @@ You'll need to have the following prerequisites **installed** on your workstatio
 ## What is included?
  * **Apache 2.4**
  * **MySQL 5.7**
- * **PHP 7.4**
+ * **PHP 8.0**
  * **PhpMyAdmin**
 
 ## Quick Start
